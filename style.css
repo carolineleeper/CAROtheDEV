@@ -361,3 +361,30 @@ ________/\\\\\\\\\__/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\____
        ____\////\\\\\\\\\_______\/\\\_______\/\\\\\\\\\\\\/___ 
         _______\/////////________\///________\////////////_____       
 */
+
+body {
+  background-color: #3f3f3f;
+  font-family: "Lato", sans-serif;
+}
+.ctd-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.ctd-soon {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+.ctd-alt-colour {
+  color: #0e5b7f;
+}
+.ctd-center-img,
+.ctd-center-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
