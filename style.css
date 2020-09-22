@@ -365,14 +365,13 @@ ________/\\\\\\\\\__/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\____
 body {
   background-color: #3f3f3f;
   font-family: "Lato", sans-serif;
-  height: 100vh;
 }
 .ctd-page {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 }
 .ctd-soon {
