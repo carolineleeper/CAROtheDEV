@@ -362,6 +362,10 @@ ________/\\\\\\\\\__/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\____
         _______\/////////________\///________\////////////_____       
 */
 
+/*****************************************/
+/************* G E N E R A L *************/
+/*****************************************/
+
 body {
   background-color: #3f3f3f;
   font-family: "Lato", sans-serif;
@@ -379,25 +383,70 @@ body {
   color: #fff;
   text-align: center;
 }
-.ctd-blue-colour {
+.ctd-blue {
   color: #0e5b7f;
 }
-.ctd-red-colour {
+.ctd-red {
   color: #8e2112;
 }
-.ctd-orange-colour {
+.ctd-orange {
   color: #cd6600;
 }
-.ctd-yellow-colour {
+.ctd-yellow {
   color: #fcb444;
+}
+.ctd-blue-background {
+  background-color: #0e5b7f;
+}
+.ctd-red-background {
+  background-color: #8e2112;
+}
+.ctd-orange-background {
+  background-color: #cd6600;
+}
+.ctd-yellow-background {
+  background-color: #fcb444;
 }
 .ctd-center-img,
 .ctd-center-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 .ctd-center-img img {
   width: 100%;
+}
+
+/***************************************/
+/************* H E A D E R *************/
+/***************************************/
+
+.ctd-header {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/***********************************/
+/************* M E N U *************/
+/***********************************/
+
+.ctd-menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  background-color: #858076;
+  border-radius: 5px;
+  padding: 2rem;
+}
+.ctd-menu-item {
+  color: #1e1e1e;
+  font-size: 2rem;
+  text-align: center;
+  border-width: 0px 0px 5px 5px;
+  border-color: #1e1e1e;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
 }
