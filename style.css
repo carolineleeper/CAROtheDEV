@@ -389,3 +389,6 @@ body {
   justify-content: center;
   width: 100%;
 }
+.ctd-center-img img {
+  width: 100%;
+}
