@@ -379,8 +379,17 @@ body {
   color: #fff;
   text-align: center;
 }
-.ctd-alt-colour {
+.ctd-blue-colour {
   color: #0e5b7f;
+}
+.ctd-red-colour {
+  color: #8e2112;
+}
+.ctd-orange-colour {
+  color: #cd6600;
+}
+.ctd-yellow-colour {
+  color: #fcb444;
 }
 .ctd-center-img,
 .ctd-center-text {
