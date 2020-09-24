@@ -1,19 +1,22 @@
 .cls-1,
 .cls-2,
 .cls-3,
-.cls-4 {
+.cls-4,
+.cls-5 {
   opacity: 0;
-  transform: translateX(-10%);
-  animation: slideIn 0.8s forwards;
+  animation: slideIn 3s forwards;
+  -o-animation: slideIn 3s forwards;
+  -moz-animation: slideIn 3s forwards;
+  -webkit-animation: slideIn 3s forwards;
 }
-
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4 {
+  transform: translateX(-10%);
+}
 .cls-5 {
   fill: #fff;
-  opacity: 0;
-  animation: fadeIn 4s forwards;
-  -o-animation: fadeIn 4s forwards;
-  -webkit-animation: fadeIn 4s forwards;
-  -moz-animation: fadeIn 4s forwards;
 }
 
 #ctd-logo-C {
@@ -72,7 +75,7 @@
   -moz-animation: slideIn 0.8s forwards;
   -webkit-animation: slideIn 0.8s forwards;
 
-  animation-delay: all 2s;
+  animation-delay: 2s;
   -o-animation-delay: 2s;
   -moz-animation-delay: 2s;
   -webkit-animation-delay: 2s;
@@ -85,7 +88,7 @@
   -moz-animation: slideIn 0.8s forwards;
   -webkit-animation: slideIn 0.8s forwards;
 
-  animation-delay: all 2.1s;
+  animation-delay: 2.1s;
   -o-animation-delay: 2.1s;
   -moz-animation-delay: 2.1s;
   -webkit-animation-delay: 2.1s;
@@ -98,7 +101,7 @@
   -moz-animation: slideIn 0.8s forwards;
   -webkit-animation: slideIn 0.8s forwards;
 
-  animation-delay: all 2.2s;
+  animation-delay: 2.2s;
   -o-animation-delay: 2.2s;
   -moz-animation-delay: 2.2s;
   -webkit-animation-delay: 2.2s;
@@ -111,47 +114,10 @@
   -moz-animation: slideIn 0.8s forwards;
   -webkit-animation: slideIn 0.8s forwards;
 
-  animation-delay: all 2.3s;
+  animation-delay: 2.3s;
   -o-animation-delay: 2.3s;
   -moz-animation-delay: 2.3s;
   -webkit-animation-delay: 2.3s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  10%,
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  10%,
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  10%,
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  10%,
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes slideIn {
