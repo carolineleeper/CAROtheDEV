@@ -4,10 +4,10 @@
 .cls-4,
 .cls-5 {
   opacity: 0;
-  animation: slideIn 3s forwards;
-  -o-animation: slideIn 3s forwards;
-  -moz-animation: slideIn 3s forwards;
-  -webkit-animation: slideIn 3s forwards;
+  animation: slideIn 0.8s forwards;
+  -o-animation: slideIn 0.8s forwards;
+  -moz-animation: slideIn 0.8s forwards;
+  -webkit-animation: slideIn 0.8s forwards;
 }
 .cls-1,
 .cls-2,
@@ -62,69 +62,49 @@
   -webkit-animation-delay: 1.4s;
 }
 #ctd-logo-DEV {
-  animation-delay: 1.7s;
-  -o-animation-delay: 1.7s;
-  -moz-animation-delay: 1.7s;
-  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.9s;
+  -o-animation-delay: 1.9s;
+  -moz-animation-delay: 1.9s;
+  -webkit-animation-delay: 1.9s;
 }
 #ctd-logo-blue {
   fill: #0e5b7f;
-
-  animation: slideIn 0.8s forwards;
-  -o-animation: slideIn 0.8s forwards;
-  -moz-animation: slideIn 0.8s forwards;
-  -webkit-animation: slideIn 0.8s forwards;
-
-  animation-delay: 2s;
-  -o-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-}
-#ctd-logo-red {
-  fill: #8e2112;
-
-  animation: slideIn 0.8s forwards;
-  -o-animation: slideIn 0.8s forwards;
-  -moz-animation: slideIn 0.8s forwards;
-  -webkit-animation: slideIn 0.8s forwards;
 
   animation-delay: 2.1s;
   -o-animation-delay: 2.1s;
   -moz-animation-delay: 2.1s;
   -webkit-animation-delay: 2.1s;
 }
-#ctd-logo-orange {
-  fill: #cd6600;
-
-  animation: slideIn 0.8s forwards;
-  -o-animation: slideIn 0.8s forwards;
-  -moz-animation: slideIn 0.8s forwards;
-  -webkit-animation: slideIn 0.8s forwards;
+#ctd-logo-red {
+  fill: #8e2112;
 
   animation-delay: 2.2s;
   -o-animation-delay: 2.2s;
   -moz-animation-delay: 2.2s;
   -webkit-animation-delay: 2.2s;
 }
-#ctd-logo-yellow {
-  fill: #fcb444;
-
-  animation: slideIn 0.8s forwards;
-  -o-animation: slideIn 0.8s forwards;
-  -moz-animation: slideIn 0.8s forwards;
-  -webkit-animation: slideIn 0.8s forwards;
+#ctd-logo-orange {
+  fill: #cd6600;
 
   animation-delay: 2.3s;
   -o-animation-delay: 2.3s;
   -moz-animation-delay: 2.3s;
   -webkit-animation-delay: 2.3s;
 }
+#ctd-logo-yellow {
+  fill: #fcb444;
+
+  animation-delay: 2.4s;
+  -o-animation-delay: 2.4s;
+  -moz-animation-delay: 2.4s;
+  -webkit-animation-delay: 2.4s;
+}
 
 @keyframes slideIn {
   0% {
     opacity: 0;
   }
-  10% {
+  5% {
     opacity: 1;
   }
   100% {
@@ -136,7 +116,7 @@
   0% {
     opacity: 0;
   }
-  10% {
+  5% {
     opacity: 1;
   }
   100% {
@@ -148,7 +128,7 @@
   0% {
     opacity: 0;
   }
-  10% {
+  5% {
     opacity: 1;
   }
   100% {
@@ -160,7 +140,7 @@
   0% {
     opacity: 0;
   }
-  10% {
+  5% {
     opacity: 1;
   }
   100% {
