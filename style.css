@@ -371,6 +371,9 @@ body {
   font-family: "Lato", sans-serif;
   color: #fff;
 }
+p {
+  margin: 0;
+}
 .ctd-blue {
   color: #0e5b7f;
 }
@@ -438,20 +441,22 @@ body {
   grid-area: menu;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .ctd-menu-item {
   padding: 1rem;
-  margin: 1rem;
+  margin-bottom: 1rem;
   border-radius: 5px;
   cursor: pointer;
   font-size: 2.5rem;
 }
+.ctd-menu-item:hover .ctd-menu-dot {
+}
 
-/***********************************/
-/************* M E N U *************/
-/***********************************/
+/*********************************************/
+/************* A N I M A T I O N *************/
+/*********************************************/
 
 /*****************************************/
 /************* C O N T E N T *************/
@@ -459,6 +464,8 @@ body {
 
 .ctd-content-container {
   grid-area: content;
+  padding: 2rem;
+  margin: 1rem;
 }
 
 /***************************************/
