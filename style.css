@@ -362,42 +362,116 @@ ________/\\\\\\\\\__/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\____
         _______\/////////________\///________\////////////_____       
 */
 
+/*****************************************/
+/************* G E N E R A L *************/
+/*****************************************/
+
 body {
   background-color: #3f3f3f;
   font-family: "Lato", sans-serif;
-}
-.ctd-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 80vh;
-  width: 100%;
-}
-.ctd-soon {
-  font-size: 3rem;
   color: #fff;
-  text-align: center;
 }
-.ctd-blue-colour {
+p {
+  margin: 0;
+}
+.ctd-blue {
   color: #0e5b7f;
 }
-.ctd-red-colour {
+.ctd-red {
   color: #8e2112;
 }
-.ctd-orange-colour {
+.ctd-orange {
   color: #cd6600;
 }
-.ctd-yellow-colour {
+.ctd-yellow {
   color: #fcb444;
+}
+.ctd-blue-background {
+  background-color: #0e5b7f;
+}
+.ctd-red-background {
+  background-color: #8e2112;
+}
+.ctd-orange-background {
+  background-color: #cd6600;
+}
+.ctd-yellow-background {
+  background-color: #fcb444;
 }
 .ctd-center-img,
 .ctd-center-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 .ctd-center-img img {
   width: 100%;
+}
+.ctd-light-container {
+  background-color: #858076;
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem;
+}
+.ctd-page {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "menu content content content"
+    "footer footer footer footer";
+  height: 100vh;
+  width: 100%;
+}
+
+/***************************************/
+/************* H E A D E R *************/
+/***************************************/
+
+.ctd-header {
+  grid-area: header;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/***********************************/
+/************* M E N U *************/
+/***********************************/
+
+.ctd-menu-container {
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.ctd-menu-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+/*********************************************/
+/************* A N I M A T I O N *************/
+/*********************************************/
+
+/*****************************************/
+/************* C O N T E N T *************/
+/*****************************************/
+
+.ctd-content-container {
+  grid-area: content;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+/***************************************/
+/************* F O O T E R *************/
+/***************************************/
+
+.ctd-footer {
+  grid-area: footer;
+  padding: 2rem;
+  text-align: center;
 }
