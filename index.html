@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel='icon' href='favicon.ico' type='image/x-icon'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>CAROtheDEV</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="ctd-page">
-        <div class="ctd-center-img">
-            <img src="/CtD-01.png" alt="CTD Logo">
-        </div>
-        <div class="ctd-center-text">
-            <h1 class="ctd-soon">Soon<span class="ctd-blue-colour">.</span></h1>
-        </div>
+      <div class="ctd-center-img">
+        <img src="/CtD-01.png" alt="CTD Logo" />
+      </div>
+      <!-- <h1 class="ctd-soon">Soon<span class="ctd-blue-colour">.</span></h1> -->
+      <h1 class="ctd-soon">Need a website?</h1>
+      <form class="ctd-form" name="contact" netlify>
+        <p>
+          <input
+            type="text"
+            name="name"
+            class="ctd-form-input"
+            placeholder="Name"
+          />
+          <label class="ctd-form-label">Name</label>
+        </p>
+        <p>
+          <input
+            type="email"
+            name="email"
+            class="ctd-form-input"
+            placeholder="Email"
+          />
+          <label class="ctd-form-label">Email</label>
+        </p>
+        <p>
+          <textarea
+            rows="4"
+            name="message"
+            class="ctd-form-input"
+            placeholder="Message"
+          ></textarea>
+          <label class="ctd-form-label">Message</label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </div>
-</body>
-<script src="js/ctd.js"></script>
-
+  </body>
+  <script src="js/ctd.js"></script>
 </html>
