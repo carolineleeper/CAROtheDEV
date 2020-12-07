@@ -393,15 +393,26 @@ body {
 .ctd-yellow-colour {
   color: #fcb444;
 }
-.ctd-center-img,
+.ctd-logo-container,
 .ctd-center-text {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.ctd-center-img img {
-  width: 100%;
+.ctd-logo-container {
+  width: 80vw;
+  margin: 2rem 1rem 3rem;
+  /* padding: 2rem 1rem; */
+}
+@media screen and (max-width: 750px) {
+  .ctd-logo-container {
+    width: 95%;
+    margin: 1rem 1rem 2.5rem;
+  }
+  .ctd-soon {
+    font-size: 2rem;
+  }
 }
 
 /*****************************************/
@@ -475,4 +486,10 @@ textarea {
 .ctd-form-input:required,
 .ctd-form-input:invalid {
   box-shadow: none;
+}
+
+@media screen and (max-width: 750px) {
+  .ctd-form {
+    width: 100%;
+  }
 }
