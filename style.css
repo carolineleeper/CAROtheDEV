@@ -478,13 +478,13 @@ textarea {
   padding-bottom: 6px;
   font-weight: 400;
   border-width: 3px;
-  border-image: linear-gradient(
+  /* border-image: linear-gradient(
     to right,
     var(--yellow),
     var(--red),
     var(--blue)
   );
-  border-image-slice: 1;
+  border-image-slice: 1; */
 }
 .ctd-form-input:focus ~ .ctd-form-label {
   position: absolute;
@@ -495,13 +495,32 @@ textarea {
   color: var(--yellow);
   font-weight: 700;
 }
+.ctd-form p:nth-child(1) .ctd-form-input:focus {
+  border-color: var(--yellow);
+}
+.ctd-form p:nth-child(1) .ctd-form-input:focus ~ .ctd-form-label {
+  color: var(--yellow);
+}
+.ctd-form p:nth-child(2) .ctd-form-input:focus {
+  border-color: var(--orange);
+}
+.ctd-form p:nth-child(2) .ctd-form-input:focus ~ .ctd-form-label {
+  color: var(--orange);
+}
+.ctd-form p:nth-child(3) .ctd-form-input:focus {
+  border-color: var(--red);
+}
+.ctd-form p:nth-child(3) .ctd-form-input:focus ~ .ctd-form-label {
+  color: var(--red);
+}
+
 .ctd-form-input:required,
 .ctd-form-input:invalid {
   box-shadow: none;
 }
 .ctd-submit-btn {
   all: unset;
-  border: 5px solid var(--yellow);
+  border: 5px solid var(--blue);
   border-radius: 3px;
   padding: 1rem 3rem;
   margin: auto;
@@ -511,7 +530,7 @@ textarea {
   cursor: pointer;
 }
 .ctd-submit-btn:hover {
-  border: 5px solid #8e2112;
+  border: 5px solid var(--blue);
 
   background-image: linear-gradient(
     149deg,
