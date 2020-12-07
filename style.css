@@ -362,6 +362,13 @@ ________/\\\\\\\\\__/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\____
         _______\/////////________\///________\////////////_____       
 */
 
+:root {
+  --blue: #0e5b7f;
+  --red: #8e2112;
+  --orange: #cd6600;
+  --yellow: #fcb444;
+}
+
 body {
   background-color: #3f3f3f;
   font-family: "Lato", sans-serif;
@@ -382,16 +389,16 @@ body {
 }
 
 .ctd-blue-colour {
-  color: #0e5b7f;
+  color: var(--blue);
 }
 .ctd-red-colour {
-  color: #8e2112;
+  color: var(--red);
 }
 .ctd-orange-colour {
-  color: #cd6600;
+  color: var(--orange);
 }
 .ctd-yellow-colour {
-  color: #fcb444;
+  color: var(--yellow);
 }
 .ctd-logo-container,
 .ctd-center-text {
@@ -471,7 +478,12 @@ textarea {
   padding-bottom: 6px;
   font-weight: 400;
   border-width: 3px;
-  border-image: linear-gradient(to right, #fcb444, #8e2112, #0e5b7f);
+  border-image: linear-gradient(
+    to right,
+    var(--yellow),
+    var(--red),
+    var(--blue)
+  );
   border-image-slice: 1;
 }
 .ctd-form-input:focus ~ .ctd-form-label {
@@ -480,16 +492,54 @@ textarea {
   display: block;
   transition: 0.3s;
   font-size: 1rem;
-  color: #fcb444;
+  color: var(--yellow);
   font-weight: 700;
 }
 .ctd-form-input:required,
 .ctd-form-input:invalid {
   box-shadow: none;
 }
+.ctd-submit-btn {
+  all: unset;
+  border: 5px solid var(--yellow);
+  border-radius: 3px;
+  padding: 1rem 3rem;
+  margin: auto;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.ctd-submit-btn:hover {
+  border: 5px solid #8e2112;
+
+  background-image: linear-gradient(
+    149deg,
+    transparent 10%,
+    var(--blue) 10% 20%,
+    transparent 20% 30%,
+    var(--blue) 30% 40%,
+    transparent 40% 50%,
+    var(--blue) 50% 60%,
+    transparent 60% 70%,
+    var(--blue) 70% 80%,
+    transparent 80% 90%,
+    var(--blue) 90% 100%
+  );
+  animation: background 3s linear infinite;
+}
 
 @media screen and (max-width: 750px) {
   .ctd-form {
     width: 100%;
+  }
+}
+
+@keyframes background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400px 0;
   }
 }
