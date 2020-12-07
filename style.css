@@ -438,6 +438,9 @@ body {
 .ctd-form .hidden {
   display: none;
 }
+.ctd-form .recaptcha {
+  margin: auto;
+}
 .ctd-form p {
   position: relative;
   display: flex;
@@ -498,22 +501,22 @@ textarea {
   color: var(--yellow);
   font-weight: 700;
 }
-.ctd-form p:nth-child(2) .ctd-form-input:focus {
+.ctd-form p:nth-child(1) .ctd-form-input:focus {
   border-color: var(--yellow);
 }
-.ctd-form p:nth-child(2) .ctd-form-input:focus ~ .ctd-form-label {
+.ctd-form p:nth-child(1) .ctd-form-input:focus ~ .ctd-form-label {
   color: var(--yellow);
 }
-.ctd-form p:nth-child(3) .ctd-form-input:focus {
+.ctd-form p:nth-child(2) .ctd-form-input:focus {
   border-color: var(--orange);
 }
-.ctd-form p:nth-child(3) .ctd-form-input:focus ~ .ctd-form-label {
+.ctd-form p:nth-child(2) .ctd-form-input:focus ~ .ctd-form-label {
   color: var(--orange);
 }
-.ctd-form p:nth-child(4) .ctd-form-input:focus {
+.ctd-form p:nth-child(3) .ctd-form-input:focus {
   border-color: var(--red);
 }
-.ctd-form p:nth-child(4) .ctd-form-input:focus ~ .ctd-form-label {
+.ctd-form p:nth-child(3) .ctd-form-input:focus ~ .ctd-form-label {
   color: var(--red);
 }
 

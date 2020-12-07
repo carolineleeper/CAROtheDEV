@@ -116,11 +116,6 @@
         data-netlify-recaptcha="true"
         netlify
       >
-        <p class="hidden">
-          <label
-            >Don’t fill this out if you're human: <input name="bot-field"
-          /></label>
-        </p>
         <p>
           <input
             type="text"
@@ -148,7 +143,12 @@
           ></textarea>
           <label class="ctd-form-label">Message</label>
         </p>
-        <div data-netlify-recaptcha="true"></div>
+        <p class="hidden">
+          <label
+            >Don’t fill this out if you're human: <input name="bot-field"
+          /></label>
+        </p>
+        <div class="recaptcha" data-netlify-recaptcha="true"></div>
         <p>
           <button type="submit" class="ctd-submit-btn">Send</button>
         </p>
